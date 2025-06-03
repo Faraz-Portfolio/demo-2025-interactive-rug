@@ -1,10 +1,9 @@
 import { Mask, TransformControls, useMask } from "@react-three/drei";
-import { useFrame, type ElementProps } from "@react-three/fiber";
+import { useFrame } from "@react-three/fiber";
 import { RapierRigidBody, RigidBody } from "@react-three/rapier";
-import { button, useControls } from "leva";
-import { useMemo, useRef } from "react";
-import { Vector3, type Group } from "three";
 import { easing } from "maath";
+import { useMemo, useRef } from "react";
+import { Vector3 } from "three";
 
 interface UnderProps {
   underPositionRef?: React.RefObject<Vector3>;

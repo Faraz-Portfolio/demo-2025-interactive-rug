@@ -7,17 +7,9 @@ Title: Carpet
 */
 
 import { useGLTF } from "@react-three/drei";
-import {
-  cloneElement,
-  useLayoutEffect,
-  useMemo,
-  type PropsWithChildren,
-  type ReactElement,
-  type ReactNode,
-  type RefObject,
-} from "react";
-import { RugMaterial, type RugMaterialProps } from "./RugMaterial";
-import type { Group, Vector3 } from "three";
+import { useLayoutEffect, useMemo, type RefObject } from "react";
+import type { Vector3 } from "three";
+import { RugMaterial } from "./RugMaterial";
 
 interface CarpetProps {
   underPositionRef: RefObject<Vector3>;

@@ -1,12 +1,6 @@
-import { Environment, useHelper } from "@react-three/drei";
+import { Environment } from "@react-three/drei";
 import { useRef } from "react";
-import {
-  CameraHelper,
-  DirectionalLightHelper,
-  MathUtils,
-  OrthographicCamera,
-  type DirectionalLight,
-} from "three";
+import { OrthographicCamera, type DirectionalLight } from "three";
 
 export function Lights() {
   const lightRef = useRef<DirectionalLight>(null!);

@@ -1,39 +1,15 @@
-import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import {
-  Bounds,
-  ContactShadows,
-  OrbitControls,
-  PerspectiveCamera,
-  Sphere,
-  TransformControls,
-  useFBO,
-  useHelper,
-} from "@react-three/drei";
-import { Suspense, useMemo, useRef } from "react";
-import {
-  CameraHelper,
-  DepthFormat,
-  DepthTexture,
-  DoubleSide,
-  FloatType,
-  Group,
-  Mesh,
-  MeshDepthMaterial,
-  RGBAFormat,
-  UnsignedByteType,
-  UnsignedIntType,
-  Vector3,
-  type OrthographicCamera,
-} from "three";
-import { RugMaterial } from "./RugMaterial";
+import { Bounds, OrbitControls, PerspectiveCamera } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import { useRef } from "react";
+import { Vector3 } from "three";
 import { Carpet } from "./Carpet";
 import { Lights } from "./Lights";
 
 import { EffectComposer, N8AO } from "@react-three/postprocessing";
 import { Physics, RigidBody } from "@react-three/rapier";
-import { Under } from "./Under";
 import { Blocks } from "./Blocks";
 import { UI } from "./UI";
+import { Under } from "./Under";
 
 function Thing() {
   const underPositionRef = useRef(new Vector3());

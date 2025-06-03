@@ -1,17 +1,5 @@
-import { useFrame } from "@react-three/fiber";
-import { useControls } from "leva";
 import { useMemo } from "react";
-import {
-  DoubleSide,
-  Group,
-  Material,
-  MeshBasicMaterial,
-  MeshDepthMaterial,
-  Texture,
-  Vector3,
-  Vector4,
-  type DepthTexture,
-} from "three";
+import { DoubleSide, Material, Vector3, Vector4 } from "three";
 
 import CSM from "three-custom-shader-material";
 

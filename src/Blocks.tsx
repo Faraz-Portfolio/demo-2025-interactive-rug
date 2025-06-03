@@ -6,7 +6,6 @@ Source: https://sketchfab.com/3d-models/blocks-e3455b13c1a14ca69962d5f5fa2f3efa
 Title: Blocks
 */
 
-import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 import { RigidBody } from "@react-three/rapier";
 

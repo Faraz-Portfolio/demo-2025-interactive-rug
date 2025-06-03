@@ -1,9 +1,12 @@
 import {
+  FaArtstation,
+  FaCode,
+  FaInfo,
+  FaLinkedin,
+  FaSquareGithub,
+  FaSquareInstagram,
   FaSquareTwitter,
   FaSquareXTwitter,
-  FaLinkedin,
-  FaArtstation,
-  FaSquareInstagram,
 } from "react-icons/fa6";
 
 export function UI() {
@@ -70,6 +73,83 @@ export function UI() {
             Faraz Shaikh
           </a>
         </p>
+        <div
+          style={{
+            width: "100%",
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            marginTop: "1rem",
+            gap: "1rem",
+            pointerEvents: "all",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <a
+              href="https://github.com/Faraz-Portfolio/demo-2025-interactive-rug"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "#fff",
+                textDecoration: "none",
+                pointerEvents: "all",
+              }}
+            >
+              <FaCode size="1.5rem" />
+            </a>
+            <p
+              style={{
+                margin: 0,
+                fontFamily: '"Cabin Sketch", sans-serif',
+                color: "#fff",
+
+                textAlign: "center",
+              }}
+            >
+              Code
+            </p>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <a
+              href="https://github.com/Faraz-Portfolio/demo-2025-interactive-rug/blob/main/README.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "#fff",
+                textDecoration: "none",
+                pointerEvents: "all",
+              }}
+            >
+              <FaInfo size="1.5rem" />
+            </a>
+            <p
+              style={{
+                margin: 0,
+                fontFamily: '"Cabin Sketch", sans-serif',
+                color: "#fff",
+
+                textAlign: "center",
+              }}
+            >
+              Info
+            </p>
+          </div>
+        </div>
       </div>
 
       <footer
@@ -97,6 +177,18 @@ export function UI() {
             marginBottom: "0.5rem",
           }}
         >
+          <a
+            href="https://github.com/FarazzShaikh"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: "#fff",
+              textDecoration: "none",
+              pointerEvents: "all",
+            }}
+          >
+            <FaSquareGithub size="1.5rem" />
+          </a>
           <a
             href="https://x.com/cantBeFaraz"
             target="_blank"
