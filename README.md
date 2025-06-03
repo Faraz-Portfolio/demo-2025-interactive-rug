@@ -1,6 +1,6 @@
 # Interactive rug shader
 
-View Live: [StackBlitz](https://demo2025interactiverug-en3a--5173--55edb8f4.local-credentialless.webcontainer.io/)
+View Live: [StackBlitz](https://stackblitz.com/~/github.com/Faraz-Portfolio/demo-2025-interactive-rug)
 
 A simple interactive rug shader that simulates a spherical object going under a rug and the subsequent lifting of the rug.
 
