@@ -16,7 +16,9 @@ interface CarpetProps {
 }
 
 export function Carpet({ underPositionRef }: CarpetProps) {
-  const { nodes, materials } = useGLTF("/carpet.glb") as any;
+  const { nodes, materials } = useGLTF(
+    "/demo-2025-interactive-rug/carpet.glb"
+  ) as any;
 
   const base = useMemo(
     () => materials.defaultMat.clone(),
@@ -36,5 +38,3 @@ export function Carpet({ underPositionRef }: CarpetProps) {
     </group>
   );
 }
-
-useGLTF.preload("/carpet.glb");

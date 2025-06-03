@@ -10,7 +10,9 @@ import { useGLTF } from "@react-three/drei";
 import { RigidBody } from "@react-three/rapier";
 
 export function Blocks() {
-  const { nodes, materials } = useGLTF("/blocks.glb") as any;
+  const { nodes, materials } = useGLTF(
+    "/demo-2025-interactive-rug/blocks.glb"
+  ) as any;
   return (
     <>
       <group dispose={null} scale={0.2}>
