@@ -3,6 +3,16 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "author": {
+    "name": "Faraz Shaikh",
+    "email": "farazzshaikh@gmail.com",
+    "url": "https://farazzshaikh.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Faraz-Portfolio/demo-2025-interactive-rug"
+  },
+  "license": "AGPL-3.0-or-later",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
