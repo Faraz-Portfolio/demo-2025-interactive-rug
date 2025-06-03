@@ -1,3 +1,11 @@
+import {
+  FaSquareTwitter,
+  FaSquareXTwitter,
+  FaLinkedin,
+  FaArtstation,
+  FaSquareInstagram,
+} from "react-icons/fa6";
+
 export function UI() {
   return (
     <>
@@ -8,7 +16,7 @@ export function UI() {
           left: 0,
           width: "100%",
           zIndex: 1000,
-          padding: "2rem 0",
+          padding: "2rem",
           boxSizing: "border-box",
           pointerEvents: "none",
         }}
@@ -63,32 +71,109 @@ export function UI() {
           </a>
         </p>
       </div>
-      <div
+
+      <footer
         style={{
           position: "absolute",
           bottom: 0,
-          left: 0,
+          right: 0,
           width: "100%",
-          zIndex: 1000,
-          padding: "2rem 1rem",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "flex-end",
+          justifyContent: "flex-end",
+          padding: "2rem",
           boxSizing: "border-box",
+          color: "#fff",
+          zIndex: 1000,
           pointerEvents: "none",
         }}
       >
-        <p
+        <div
           style={{
-            width: "100%",
-            textAlign: "right",
-            fontFamily: '"Cabin Sketch", sans-serif',
-            fontSize: "0.8rem",
-            color: "#fff",
-            margin: 0,
+            display: "flex",
+            alignItems: "center",
+            gap: "0.5rem",
+            marginBottom: "0.5rem",
           }}
         >
-          by Faraz Shaikh <br />
-          Freelance WebGL Developer <br />
+          <a
+            href="https://x.com/cantBeFaraz"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: "#fff",
+              textDecoration: "none",
+              pointerEvents: "all",
+            }}
+          >
+            <FaSquareTwitter size="1.5rem" />
+          </a>
+          <a
+            href="https://x.com/cantBeFaraz"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: "#fff",
+              textDecoration: "none",
+              pointerEvents: "all",
+            }}
+          >
+            <FaSquareXTwitter size="1.5rem" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/faraz-shaikh-811655166/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: "#fff",
+              textDecoration: "none",
+              pointerEvents: "all",
+            }}
+          >
+            <FaLinkedin size="1.5rem" />
+          </a>
+          <a
+            href="https://www.artstation.com/farazshaikh"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: "#fff",
+              textDecoration: "none",
+              pointerEvents: "all",
+            }}
+          >
+            <FaArtstation size="1.5rem" />
+          </a>
+          <a
+            href="https://www.instagram.com/cantBeFaraz/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: "#fff",
+              textDecoration: "none",
+              pointerEvents: "all",
+            }}
+          >
+            <FaSquareInstagram size="1.5rem" />
+          </a>
+        </div>
+        <p
+          style={{
+            fontFamily: "sans-serif",
+            fontSize: "0.9rem",
+            margin: 0,
+            textAlign: "right",
+          }}
+        >
+          Design and code by Faraz
+          <br />
+          Freelance WebGL technical artist and developer
+          <br />
           <a
             href="mailto:farazzshaikh@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             style={{
               color: "#fff",
               textDecoration: "underline",
@@ -98,7 +183,7 @@ export function UI() {
             farazzshaikh@gmail.com
           </a>
         </p>
-      </div>
+      </footer>
     </>
   );
 }
