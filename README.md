@@ -1,6 +1,6 @@
 # Interactive rug shader
 
-View Live: [StackBlitz](https://stackblitz.com/~/github.com/Faraz-Portfolio/demo-2025-interactive-rug)
+View Live: [GitHub Pages](https://faraz-portfolio.github.io/demo-2025-interactive-rug/)
 
 https://github.com/user-attachments/assets/464e75a3-f849-4f9d-80ab-65bfa6d7ff84
 
