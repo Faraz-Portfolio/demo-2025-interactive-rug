@@ -8,7 +8,6 @@ import { Lights } from "./Lights";
 import { EffectComposer, N8AO } from "@react-three/postprocessing";
 import { Physics, RigidBody } from "@react-three/rapier";
 import { Blocks } from "./Blocks";
-import { UI } from "./UI";
 import { Under } from "./Under";
 
 function Thing() {
@@ -39,7 +38,6 @@ function Thing() {
 export default function App() {
   return (
     <>
-      <UI />
       <Canvas shadows>
         <color attach="background" args={["#4E6688"]} />
 
