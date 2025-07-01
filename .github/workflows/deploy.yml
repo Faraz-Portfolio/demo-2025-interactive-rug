@@ -29,7 +29,7 @@ jobs:
     name: Emit
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/dev'
+    if: github.ref == 'refs/heads/main'
 
     steps:
       - name: Emit repository_dispatch event
