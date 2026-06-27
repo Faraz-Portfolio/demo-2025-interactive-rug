@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:
 
 jobs:
   build:
@@ -14,27 +13,23 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-        with:
-          lfs: true
+
+      - name: Enable Corepack
+        run: corepack enable
 
       - name: Setup Node
         uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: yarn
 
-      - name: Build project
+      - name: Build
         run: |
-          yarn
+          yarn install --immutable
           yarn build
 
-  emit:
-    name: Emit
-    needs: build
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-
-    steps:
-      - name: Emit repository_dispatch event
-        uses: peter-evans/repository-dispatch@v3
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          token: ${{ secrets.FARAZ_PORTFOLIO_PAT }}
-          repository: Faraz-Portfolio/demos.farazzshaikh.com
-          event-type: update-submodules
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
